@@ -70,6 +70,14 @@ ul.posts span {
     line-height: 1.5em;
 }
 
+#site {
+    text-align: justify;
+    width: 42em;
+    margin: 3em auto 2em;
+    line-height: 1.5em;
+    padding-bottom: 3em;
+}
+
 .site .header a {
     font-weight: bold;
     text-decoration: none;
