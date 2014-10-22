@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+</head>
+
+<body>
+    <div id="site">
+        <div id="header">
+            <h1><a href="/">{{ site.name }}</a></h1>
+            <div id="description">{{ site.description }}</div>
+            <div id="social">
+                <ul>
+                    <li><a href="http://github.com/ownport/">Github</a></li>
+                    <li><a href="{{ site.url }}/feed.xml">RSS</a></li>
+                <ul>
+            </div>
+        </div>
+        <div id="content"> {{ content }} </div>
+    </div>
+</body>
+</html>
+
