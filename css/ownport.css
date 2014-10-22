@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     margin-bottom: 5px;
-    font-size: 200%
+    font-size: 300%;
 }
 
 h2 {
@@ -32,10 +32,6 @@ h2 {
 }
 
 p { margin: 1em 0; }
-
-a         { color: #006600; }
-a:hover   { color: #006600; }
-a:visited { color: #006600; }
 
 /*****************************************************************************/
 /*  index page
@@ -52,7 +48,7 @@ ul.posts li {
 
 ul.posts span {
   color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
+  font-family: "Ubuntu Mono", Monaco, "Courier New", monospace;
   font-size: 80%;
 }
 
