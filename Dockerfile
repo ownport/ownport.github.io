@@ -2,13 +2,20 @@ FROM ubuntu:trusty
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN mkdir /data
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        make \
+        python-pip 
 
-# set up user
-RUN groupadd --gid 1000 ownport && \
-    useradd --uid 1000 --gid 1000 ownport && \
-    chown -R ownport.ownport /data
+RUN pip install \
+        pelican \
+        Markdown \
+        typogrify
 
-USER ownport
-VOLUME /data
+RUN mkdir -p /data/bin
+RUN mkdir -p /data/blog
 
+ADD scripts/create-env.sh /data/bin/
+RUN chmod +x /data/bin/*.sh
+
+CMD /data/bin/create-env.sh
