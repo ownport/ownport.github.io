@@ -1,0 +1,7 @@
+# python
+
+*.py[cod]
+
+# server status files
+
+*.pid
